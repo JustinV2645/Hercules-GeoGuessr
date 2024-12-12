@@ -1,0 +1,1 @@
+you must download the folder containing all the files, not all the files individually. then right click and extract all, and open joshindex.html

@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Hercules GeoGuessr</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    
+    <div id="menubar">
+      <p id="timer" class="timer">Timer: 00:00</p>
+      <p for="scoreCounter" class="scoreCounter">Score:</p>
+      <p id="scoreCounter" class="scoreCounter">0</p>
+      <p for="levelDifficulty" class="levelDifficulty" id="levelDifficultyLabel">Location Difficulty:</p>
+      <p id="levelDifficulty" class="levelDifficulty"></p>
+      <p id="levelCounter" class="levelCounter">level: 1 of 10</p>
+    </div>
+    
+    <div id="map"></div>
+    <div id="pano"></div>
+
+    <div id="floating-panel">
+      <input type="button" value="Reveal Location" id="revealBtn">    
+      <input type="button" value="Next Level" id="nxtBtn">
+    </div>
+    
+    
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARSXg7gfG3QM-dxRhHXU2zMeVAg_lEQsc&callback=initialize&v=weekly"
+      defer
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
