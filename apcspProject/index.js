@@ -5,17 +5,11 @@ let played = false;
 let level = 1;
 let usedLocations = []; 
 
-
 document.getElementById("nxtBtn").onclick = function () {
   alert("You must place a guess or reveal the location before you can move on")
 };
 
-/*
-
-*/
 var locations = [
-  [{ lat: 38.019914, lng: -122.286759 }, { city: 'Bayfront Blvd' }, { difficulty: 'Easy'}],
-  [{ lat: 38.007609, lng: -122.268545 }, { city: 'Refugio Park' }, { difficulty: 'Easy'}],
   [{ lat: 37.999217, lng: -122.247962 }, { city: 'Hercules community center' }, { difficulty: 'Normal'}],
   [{ lat: 37.991654, lng: -122.242933 }, { city: 'Midship Dr' }, { difficulty: 'Hard'}],
   [{ lat: 37.999816, lng: -122.235547 }, { city: `Coronado st` }, { difficulty: 'Hard'}],
@@ -45,17 +39,19 @@ var locations = [
   [{ lat: 38.010041, lng: -122.273135 }, { city: 'Sycamore Place' }, { difficulty: 'Hard'}],
   [{ lat: 38.006976, lng: -122.277874 }, { city: '2-98 Mission Springs' }, { difficulty: 'Hard'}],
   [{ lat: 38.021417, lng: -122.272798}, { city: 'CC Gov Office' }, { difficulty: 'Hard'}],
-  [{ lat: 38.031002, lng: -122.288916 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
+  [{ lat: 38.013067, lng: -122.288957 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
   [{ lat: 38.012454, lng: -122.293534 }, { city: '243 Variz' }, { difficulty: 'Hard'}],  
-  [{ lat: 38.009408, lng: -122.288480 }, { city: 'Mudflat' }, { difficulty: 'Hard'}],
+  [{ lat: 38.009408, lng: -122.288480 }, { city: 'Outskirts mudflat' }, { difficulty: 'Hard'}],
   
 ];
-
 
 let currentLocation = locations[Math.floor(Math.random() * locations.length)];
 let currentCords = currentLocation[0];
 let currentCity = currentLocation[1].city;
 let currentDifficulty = currentLocation[2].difficulty;
+
+// Ensure the first location is added to usedLocations
+usedLocations.push(locations.indexOf(currentLocation));
 
 function goAgain() {
   const availableLocations = locations.filter((_, index) => !usedLocations.includes(index));
@@ -81,7 +77,6 @@ function goAgain() {
   document.getElementById("nxtBtn").onclick = function () {
     alert("You must place a guess or reveal the location before you can move on")
   };
-
 }
 
 function checkDistance() {
