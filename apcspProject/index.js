@@ -44,7 +44,7 @@ var locations = [
   [{ lat: 37.998134, lng: -122.274434 }, { city: 'Topaz Ct' }, { difficulty: 'Hard'}],
   [{ lat: 38.010041, lng: -122.273135 }, { city: 'Sycamore Place' }, { difficulty: 'Hard'}],
   [{ lat: 38.006976, lng: -122.277874 }, { city: '2-98 Mission Springs' }, { difficulty: 'Hard'}],
-  [{ lat: 38.021331, lng: -122.27822 }, { city: 'CC Gov Office' }, { difficulty: 'Hard'}],
+  [{ lat: 38.021417, lng: -122.272798}, { city: 'CC Gov Office' }, { difficulty: 'Hard'}],
   [{ lat: 38.031002, lng: -122.288916 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
   [{ lat: 38.012454, lng: -122.293534 }, { city: '243 Variz' }, { difficulty: 'Hard'}],  
   [{ lat: 38.009408, lng: -122.288480 }, { city: 'Mudflat' }, { difficulty: 'Hard'}],
