@@ -168,7 +168,7 @@ function initialize() {
     disableDefaultUI: true,
     zoomControl: true,
     disableDoubleClickZoom: true,
-    
+    clickableIcons: false,
   });
 
   map.addListener("dblclick", (mapsMouseEvent) => {
