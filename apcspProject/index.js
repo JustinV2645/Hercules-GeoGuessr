@@ -13,12 +13,12 @@ var locations = [
   [{ lat: 37.999217, lng: -122.247962 }, { city: 'Hercules community center' }, { difficulty: 'Normal'}],
   [{ lat: 37.991654, lng: -122.242933 }, { city: 'Midship Dr' }, { difficulty: 'Hard'}],
   [{ lat: 37.999816, lng: -122.235547 }, { city: `Coronado st` }, { difficulty: 'Hard'}],
-  [{ lat: 38.007943, lng: -122.273386 }, { city: 'ohlone' }, { difficulty: 'Easy'}],
-  [{ lat: 38.028068, lng: -122.272550 }, { city: 'Victoria by the bay' }, { difficulty: 'Easy'}],
+  [{ lat: 38.007739, lng: -122.274955 }, { city: 'Amber Ct' }, { difficulty: 'Normal'}],
+  [{ lat: 38.027942, lng: -122.275978 }, { city: 'Trestle Cove' }, { difficulty: 'Normal'}],
   [{ lat: 38.009741, lng: -122.282567 }, { city: 'Hercules Ave' }, { difficulty: 'Easy'}],
   [{ lat: 38.011235, lng: -122.270548 }, { city: 'Creekside Center' }, { difficulty: 'Normal'}],
   [{ lat: 38.011108, lng: -122.265649 }, { city: 'Police Station' }, { difficulty: 'Hard'}],
-  [{ lat: 37.993309, lng: -122.230568 }, { city: 'Refugio Valley Rd' }, { difficulty: 'Normal'}],
+  [{ lat: 37.989283, lng: -122.234317 }, { city: 'Grenadine Way' }, { difficulty: 'Normal'}],
   [{ lat: 38.013998, lng: -122.294041 }, { city: 'Bay trail' }, { difficulty: 'Easy'}],
   [{ lat: 38.022585, lng: -122.277040 }, { city: 'Alfred Nobel Dr' }, { difficulty: 'Hard'}],
   [{ lat: 38.011063, lng: -122.274375 }, { city: 'Forest Run' }, { difficulty: 'Hard'}],
@@ -42,6 +42,11 @@ var locations = [
   [{ lat: 38.013067, lng: -122.288957 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
   [{ lat: 38.012454, lng: -122.293534 }, { city: '243 Variz' }, { difficulty: 'Hard'}],  
   [{ lat: 38.009408, lng: -122.288480 }, { city: 'Outskirts mudflat' }, { difficulty: 'Hard'}],
+  [{ lat: 38.012822, lng: -122.261057 }, { city: 'Valley Bible Church' }, { difficulty: 'Normal'}],  
+  [{ lat: 38.020108, lng: -122.266385 }, { city: 'Eucalyptus Knoll' }, { difficulty: 'Easy'}],
+  [{ lat: 38.006511, lng: -122.272031 }, { city: 'Pheasant Dr' }, { difficulty: 'Normal'}],
+  [{ lat: 37.990192, lng: -122.237081 }, { city: 'Vierra Way' }, { difficulty: 'Hard'}],
+  [{ lat: 37.989489, lng: -122.230433 }, { city: 'Aruba Ct' }, { difficulty: 'Hard'}],
   
 ];
 
