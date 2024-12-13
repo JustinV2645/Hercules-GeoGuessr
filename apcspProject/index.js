@@ -38,10 +38,17 @@ var locations = [
   [{ lat: 38.005378, lng: -122.245200 }, { city: 'Buttercup Ct' }, { difficulty: 'Hard'}],  
   [{ lat: 38.006878, lng: -122.254267 }, { city: 'Lupine Rd' }, { difficulty: 'Easy'}],
   [{ lat: 37.994808, lng: -122.269114 }, { city: 'Turqoise Dr' }, { difficulty: 'Hard'}],
-  [{ lat: 37.994808, lng: -122.269114 }, { city: 'Turqoise Dr' }, { difficulty: 'Hard'}],
   [{ lat: 37.994928, lng: -122.260313 }, { city: 'Malachite Ct' }, { difficulty: 'Hard'}],
   [{ lat: 38.0194342, lng: -122.2783655 }, { city: 'Shasta Ln' }, { difficulty: 'Normal'}],
   [{ lat: 38.0150788, lng: -122.2693670 }, { city: 'CA-4' }, { difficulty: 'Easy'}],
+  [{ lat: 37.998134, lng: -122.274434 }, { city: 'Topaz Ct' }, { difficulty: 'Hard'}],
+  [{ lat: 38.010041, lng: -122.273135 }, { city: 'Sycamore Place' }, { difficulty: 'Hard'}],
+  [{ lat: 38.006976, lng: -122.277874 }, { city: '2-98 Mission Springs' }, { difficulty: 'Hard'}],
+  [{ lat: 38.021331, lng: -122.27822 }, { city: 'CC Gov Office' }, { difficulty: 'Hard'}],
+  [{ lat: 38.031002, lng: -122.288916 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
+  [{ lat: 38.012454, lng: -122.293534 }, { city: '243 Variz' }, { difficulty: 'Hard'}],  
+  [{ lat: 38.009408, lng: -122.288480 }, { city: 'Mudflat' }, { difficulty: 'Hard'}],
+  
 ];
 
 
