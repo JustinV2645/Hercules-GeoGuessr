@@ -204,7 +204,7 @@ function initialize() {
     distance = checkDistance();
 
     let pointsGained = 0
-    if (distance <= 0.25) {
+    if (distance <= 0.10) {
       score += 20;
       pointsGained = 20
     } 
