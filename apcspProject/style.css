@@ -5,10 +5,13 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
 #pano {
-  margin-top: 0px;
-  height: 91%;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* Use viewport height */
+  width: 100vw; /* Use viewport width */
 }
 
 #floating-panel {
@@ -20,108 +23,81 @@ body {
   text-align: center;
   font-family: "Roboto", "sans-serif";
   line-height: 30px;
-  padding-left: 10px;
-
 }
-#floating-panel input{
+
+#floating-panel input {
   background-color: deepskyblue;
   color: white;
   border-radius: 10px;
   font-size: 35px;
   border-color: black;
   border-style: solid;
-  
+  padding: 5px 15px;
 }
 
-#nxtBtn:hover{
+#nxtBtn:hover,
+#revealBtn:hover {
   cursor: pointer;
   background-color: blue;
 }
-#nxtBtn:active{
+
+#nxtBtn:active,
+#revealBtn:active {
   border-color: yellow;
 }
-#revealBtn:hover{
-  cursor: pointer;
-  background-color: blue;
-}
-#revealBtn:active{
-  border-color: yellow;
-}
-
-
 
 #map {
   position: absolute;
-  bottom: 25px;
-  left: 10px;
+  bottom: 2%; /* Use percentages for scaling */
+  left: 2%;
   z-index: 5;
   background-color: white;
-  padding: 5px;
   border: 3px solid black;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 30px;
-  padding-left: 10px;
-  height: 35%;
-  width: 35%;
+  height: 35%; /* Adjusted for aspect ratio */
+  width: 35%; /* Adjusted for aspect ratio */
+  box-sizing: border-box;
 }
 
 #menubar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1% 2%;
   background-color: #f8f8f8;
   border-bottom: 2px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: absolute; /* Fixed at the top */
   top: 0;
+  width: 100%;
   z-index: 10;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 18px; /* Adjust font for scaling */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timer,
+.scoreCounter,
+.levelCounter,
+.levelDifficulty {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
 .timer {
-  flex: 1;
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+  margin-left: 10%;
 }
 
 .scoreCounter {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+  margin: 0 10px;
 }
 
-#scoreCounter {
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+#levelDifficultyLabel {
+  margin-left: 20px; /* Aligned based on scaling */
 }
 
-.levelCounter {
-  flex: 1;
+#levelCounter {
+  margin-right: 10%;
   text-align: right;
-  margin-right: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-.levelDifficulty {
-  flex: 1;
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-#levelDifficultyLabel{
-  float: left;
-  margin-left: 300px;
-}
-#levelDifficulty{
-  margin-left: -150px;
 }
