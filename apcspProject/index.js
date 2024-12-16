@@ -10,7 +10,6 @@ document.getElementById("nxtBtn").onclick = function () {
 };
 
 var locations = [
-  [{ lat: 37.999217, lng: -122.247962 }, { city: 'Hercules community center' }, { difficulty: 'Normal'}],
   [{ lat: 37.991654, lng: -122.242933 }, { city: 'Midship Dr' }, { difficulty: 'Hard'}],
   [{ lat: 37.999816, lng: -122.235547 }, { city: `Coronado st` }, { difficulty: 'Hard'}],
   [{ lat: 38.007739, lng: -122.274955 }, { city: 'Amber Ct' }, { difficulty: 'Normal'}],
@@ -19,17 +18,15 @@ var locations = [
   [{ lat: 38.011235, lng: -122.270548 }, { city: 'Creekside Center' }, { difficulty: 'Normal'}],
   [{ lat: 38.011108, lng: -122.265649 }, { city: 'Police Station' }, { difficulty: 'Hard'}],
   [{ lat: 37.989283, lng: -122.234317 }, { city: 'Grenadine Way' }, { difficulty: 'Normal'}],
-  [{ lat: 38.013998, lng: -122.294041 }, { city: 'Bay trail' }, { difficulty: 'Easy'}],
   [{ lat: 38.022585, lng: -122.277040 }, { city: 'Alfred Nobel Dr' }, { difficulty: 'Hard'}],
-  [{ lat: 38.011063, lng: -122.274375 }, { city: 'Forest Run' }, { difficulty: 'Hard'}],
+  [{ lat: 38.010872, lng: -122.277021 }, { city: 'Forest Park' }, { difficulty: 'Hard'}],
   [{ lat: 38.013688, lng: -122.256773 }, { city: 'Willow Ave' }, { difficulty: 'Easy'}],
   [{ lat: 38.011151, lng: -122.259138 }, { city: 'Palm Ave' }, { difficulty: 'Normal'}],
   [{ lat: 38.017916, lng: -122.281959 }, { city: 'Willet St' }, { difficulty: 'Hard'}],
   [{ lat: 38.033202, lng: -122.273515 }, { city: 'Regatta Point' }, { difficulty: 'Hard'}],
   [{ lat: 38.018533, lng: -122.287789 }, { city: 'Railroad Ave' }, { difficulty: 'Hard'}],
   [{ lat: 38.014920, lng: -122.289291 }, { city: 'Camden Ln' }, { difficulty: 'Hard'}],
-  [{ lat: 38.007289, lng: -122.270727 }, { city: 'Luckys' }, { difficulty: 'Normal'}],
-  [{ lat: 38.005378, lng: -122.245200 }, { city: 'Buttercup Ct' }, { difficulty: 'Hard'}],  
+  [{ lat: 38.007289, lng: -122.270727 }, { city: 'Luckys' }, { difficulty: 'Normal'}],  
   [{ lat: 38.006878, lng: -122.254267 }, { city: 'Lupine Rd' }, { difficulty: 'Easy'}],
   [{ lat: 37.994808, lng: -122.269114 }, { city: 'Turqoise Dr' }, { difficulty: 'Hard'}],
   [{ lat: 37.994928, lng: -122.260313 }, { city: 'Malachite Ct' }, { difficulty: 'Hard'}],
@@ -41,13 +38,19 @@ var locations = [
   [{ lat: 38.021417, lng: -122.272798}, { city: 'CC Gov Office' }, { difficulty: 'Hard'}],
   [{ lat: 38.013067, lng: -122.288957 }, { city: 'HBB Clubhouse' }, { difficulty: 'Hard'}],
   [{ lat: 38.012454, lng: -122.293534 }, { city: '243 Variz' }, { difficulty: 'Hard'}],  
-  [{ lat: 38.009408, lng: -122.288480 }, { city: 'Outskirts mudflat' }, { difficulty: 'Hard'}],
+  [{ lat: 38.009408, lng: -122.288480 }, { city: 'Outskirts farmland' }, { difficulty: 'Hard'}],
   [{ lat: 38.012822, lng: -122.261057 }, { city: 'Valley Bible Church' }, { difficulty: 'Normal'}],  
   [{ lat: 38.020108, lng: -122.266385 }, { city: 'Eucalyptus Knoll' }, { difficulty: 'Easy'}],
   [{ lat: 38.006511, lng: -122.272031 }, { city: 'Pheasant Dr' }, { difficulty: 'Normal'}],
   [{ lat: 37.990192, lng: -122.237081 }, { city: 'Vierra Way' }, { difficulty: 'Hard'}],
   [{ lat: 37.989489, lng: -122.230433 }, { city: 'Aruba Ct' }, { difficulty: 'Hard'}],
-  
+  [{ lat: 38.015823, lng: -122.265958 }, { city: 'Newbury St' }, { difficulty: 'Hard'}],
+  [{ lat: 38.010185, lng: -122.263492 }, { city: 'Silver Maple Dr' }, { difficulty: 'Hard'}],
+  [{ lat: 38.006863, lng: -122.263848 }, { city: 'Moraine Ct' }, { difficulty: 'Hard'}],
+  [{ lat: 38.029302, lng: -122.269783}, { city: 'Schooner Cove' }, { difficulty: 'Hard'}],
+  [{ lat: 38.023140, lng: -122.271899 }, { city: 'Multiple Organics store' }, { difficulty: 'Hard'}],
+  [{ lat: 37.997548, lng: -122.239735 }, { city: 'Halsey Ct' }, { difficulty: 'Hard'}],
+
 ];
 
 let currentLocation = locations[Math.floor(Math.random() * locations.length)];
